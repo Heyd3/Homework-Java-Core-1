@@ -1,11 +1,10 @@
 package Homework.Calculate;
 
-import Homework.Calculate.Interfases.*;
+import java.util.function.*;
 
 public class Calculator {
 
     static Supplier<Calculator> instance = Calculator::new;
-    //Calculator cal = instance.get();
     BinaryOperator<Integer> plus = (x, y) -> x + y;
     BinaryOperator<Integer> minus = (x, y) -> x - y;
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
